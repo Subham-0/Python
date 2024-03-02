@@ -1,0 +1,1 @@
+here name is a variable which is store a string value.
