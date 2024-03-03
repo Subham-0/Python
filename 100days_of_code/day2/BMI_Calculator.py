@@ -1,9 +1,9 @@
-# height = float(input("Enter your height = "))
-# weight = float(input("Enter your weight = "))
+height = float(input("Enter your height = "))
+weight = float(input("Enter your weight = "))
 
-# #bmi = str(int(weight/(height**2)))
-# bmi = str(round(weight/(height**2),3))
-# print("Body mass index is "+bmi)
+#bmi = str(int(weight/(height**2)))
+bmi = str(round(weight/(height**2),3))
+print("Body mass index is "+bmi)
 
 
 
