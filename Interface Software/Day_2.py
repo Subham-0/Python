@@ -22,7 +22,6 @@
 
 
 
-from turtle import lt
 
 
 class Ex1:
