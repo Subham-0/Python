@@ -175,4 +175,4 @@ print(sum(lst1[::1])/4) #avg of total sem
 print(max(lst1)) #max mark
 print(min(lst1)) #min mark
 print(lst1.index(max(lst1))+1) #max mark in which sem 
-print(lst1.index(min(lst1))+1) #min mark in which sem 
+print(lst1.index(min(lst1))+1) #min mark in which sem  

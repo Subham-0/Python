@@ -60,6 +60,7 @@ print(st2.center(10,"✓"))   #center align the string, using a specified charac
 st3 = "i love apple apple and apple above the all fruits"
 print(st3.count("apple"))       #returns the number of times a specified value appears in the string.
 print(st3.count("apple",4,20))  #string.count(value, start, end)
+
 print(st3.endswith("fruits"))   #Returns true if the string ends with the specified value
 print(st3.endswith("and",10,22))
 print(st3.startswith("i"))
