@@ -20,10 +20,6 @@
 #Flow to create an Object in python
 
 
-
-
-
-
 class Ex1:
     def x1(self):
         print(50)

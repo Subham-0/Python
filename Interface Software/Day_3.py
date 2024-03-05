@@ -8,7 +8,7 @@
 5- Concatination and Multiplication possible.
 '''
 
-from pyclbr import Function
+
 
 
 st1 = "I am a developer"
