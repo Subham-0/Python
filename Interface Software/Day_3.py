@@ -74,3 +74,53 @@ print(txt.expandtabs())
 print(txt.expandtabs(2))        #each tab have 1 space
 print(txt.expandtabs(4))        ##each tab have 3 space
 print(txt.expandtabs(10))       ##each tab have 9 space
+
+print(st3.find("above"))        #return start index of finding element
+
+txt = "Hello, welcome to my world."
+x = txt.find("e", 5, 10)
+print(x)
+print(txt.find("q"))     
+# print(txt.index("q"))         #If the value is not found, the find() method returns -1, but the index() method will raise an exception
+
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+# he format() method formats the specified value(s) and insert them inside the string's placeholder.
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+
+# :<		Left aligns the result (within the available space)
+# :>		Right aligns the result (within the available space)
+# :^		Center aligns the result (within the available space)
+# :=		Places the sign to the left most position
+# :+		Use a plus sign to indicate if the result is positive or negative
+# :-		Use a minus sign for negative values only
+# : 		Use a space to insert an extra space before positive numbers (and a minus sign before negative numbers)
+# :,		Use a comma as a thousand separator
+# :_		Use a underscore as a thousand separator
+# :b		Binary format
+# :c		Converts the value into the corresponding unicode character
+# :d		Decimal format
+# :e		Scientific format, with a lower case e
+# :E		Scientific format, with an upper case E
+# :f		Fix point number format
+# :F		Fix point number format, in uppercase format (show inf and nan as INF and NAN)
+# :g		General format
+# :G		General format (using a upper case E for scientific notations)
+# :o		Octal format
+# :x		Hex format, lower case
+# :X		Hex format, upper case
+# :n		Number format
+# :%		Percentage format
+
+myTuple = ("John", "Peter", "Vicky")
+x = "#".join(myTuple)
+print(x)
+#Join all items in a tuple into a string, using a hash character as separator:
+
+txt = "welcome to the jungle"      
+x = txt.split()
+print(x)                                
+
+txt = "     banana     "
+x = txt.strip()
+print("of all fruits", x, "is my favorite")  #of all fruits banana is my favorite
