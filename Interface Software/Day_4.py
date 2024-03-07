@@ -9,6 +9,9 @@ It is immutable.
 Duplicate values are allowed.
 It is denoted by parentheses ( ).'''
 
+
+
+
 from operator import index
 
 
@@ -112,3 +115,72 @@ It is written within curly braces {}.
 dic1 = {1: 2, 4: 5, "a": "Ram", (1, 2): "sam"}
 
 '''
+dict1 = {
+    "x1":"Subham",
+    "x2":"Abhijit",
+    "x3":"Nikhil"
+}
+print(dict1)
+
+dict2 = dict1.copy()
+print(dict2)
+
+name = dict1.get("x2")
+print(name)
+
+print(dict1.keys())
+
+print(dict1.values())
+
+print(dict1.items())
+
+dict1.update({"x1":"Sourav"})
+print(dict1)
+
+dict1.pop("x2")
+print(dict1)
+
+dict1.clear()
+print(dict1)
+
+#  Question-1 Create a dictionary where three elements are added.
+#   one of the value is having another dictionary , that dictionary value is a list , that list contain quantity  and price . second row of dictionary contains an object and that object has method "x1" which you have to call.
+#  third row key is a tuple and value is a combination of onject and dictionary.
+# Find the value from all three keys and print it.
+
+
+dict1 = {}
+
+class Ex1:
+    def x1(self):
+        return 2000
+ob = Ex1()
+
+d= {"x1":[10,100]}
+lt = [ob,d]
+dict1["A"] = d
+dict1["B"] = ob
+dict1[(1,2)] = lt
+#print(lt)
+#print(dict1)
+
+print("_______________________________________")
+dd1 = dict1.get("A")
+lis = dd1.get("x1")
+# print(lis)
+total1 = lis[0]*lis[1]
+print("First row price ₹",total1)
+print("_______________________________________")
+dd2 = dict1.get("B")
+total2 = dd2.x1()
+print("Second row price ₹",total2)
+print("_______________________________________")
+dd3 = dict1.get((1,2))
+# print(dd3)
+item1 = dd3[0]
+obj = item1.x1()
+item2 = dd3[1]
+lt2 = item2.get("x1")
+total3 = lt2[0]*lt2[1]
+ground_total = obj+total3
+print("Third row price ₹",ground_total)
