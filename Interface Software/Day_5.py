@@ -38,23 +38,23 @@ ob = Ex2()
 ob.x2()
 
 #default constructure
-class Ex3:
+class Ex4:
     def __init__(self):
         print("con is called")
     def x4(self):
       print("tommorrow is java class")
-ob = Ex3()
+ob = Ex4()
 ob.x4()  
 
 #parameteies constructer 
 
-class Ex3:
+class Ex5:
     def __init__(self,a,b):
         print("con is called")
         print(a+b)
     def x4(self):
       print("tommorrow is java class")
-ob = Ex3(100,200)
+ob = Ex5(100,200)
 ob.x4()    
 
 # default and parameter constructor
