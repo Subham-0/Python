@@ -123,22 +123,26 @@ ob2 = A7("Alice")
 # method overloading and conststructor are not allow
 
 
+
 # method overriding
 class A8:
     def x1(self):
         print("good moringgg")
 class B8(A8):
     def x1(self):
+        super().x1()
         print("happy sunday")
 class C8(B8):
     def x1(self):
+        super().x1()
         print("good afternoon")       
 ob = C8()
 ob.x1()
 
-ob = A8()
-ob.x1()
-ob =B8()
-ob.x1()
+# ob = A8()
+# ob.x1()
+# ob =B8()
+# ob.x1()
+
 
     
