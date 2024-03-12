@@ -1,0 +1,131 @@
+# ALGORITHM
+# FIQUENTY ALOGORITM (APRIORI ALGORITHM)
+'''
+=>  This algoritm is know for frequent item set
+=>  DATA MINING:
+        In a shopping mall, there are many items and the databases are centralized.
+        These are five V's:
+        a - VELOCITY:
+            the speed in which datas are coming.
+        b - VOLUME:
+        c - VARIETY
+        d - VALUE
+        e - VERACITY:
+            acuracy 
+        These algorithm says about frequent item set
+        It is developed by many one of these R.agarwal
+        Frequent item set to find we can use two algoritm
+        1- Apriori algorithm
+        2 - FP Growth (Frequent Pattern)
+        
+        DataSet:
+            |Transation | item set
+            |-----------|----------
+            |T1         | A,B,C 
+            |-----------|----------
+            |T2         | A,C 
+            |-----------|----------
+            |T3         | A,D 
+            |-----------|----------
+            |T4         | B,E,F
+            |-----------|----------
+            
+        Minimum Support = 2 (it means which is frequent available for two times will be kept and less than two will not be consider)
+        
+        C1(Candid 1)
+            |Item       | Support
+            |-----------|----------
+            |A          | 3 
+            |-----------|----------
+            |B          | 2
+            |-----------|----------
+            |C          | 2 
+            |-----------|----------
+            |D          | 1
+            |-----------|----------
+            |E          | 1 
+            |-----------|----------
+            |F          | 1
+            |-----------|----------
+            
+            Discard D,E,F becase of minimum support
+            
+        L1(Support = 2)
+            |Item       | Support
+            |-----------|----------
+            |A          | 3 
+            |-----------|----------
+            |B          | 2
+            |-----------|----------
+            |C          | 2 
+            |-----------|----------
+        
+        C2(Binding)
+            |Item       | Support
+            |-----------|----------
+        Ⅹ   |A,B        | 1
+            |-----------|----------
+            |A,C        | 2
+            |-----------|----------
+        Ⅹ   |B,C        | 1
+            |-----------|----------
+        
+        A.R(Association Rule):
+            |Item       | Support  |Confidence | %C  
+            |-----------|----------|-----------|----------
+            |A-->C      | 2        | 2/3       | 66% 
+            |-----------|----------|-----------|----------
+            |B-->C      | 2        | 2/2       | 100%
+            |-----------|----------|-----------|----------
+
+#CLUSTERING(Unsupervising ML)
+    There are many types of clustering technique and algorithm
+    K Means Clustering-
+        K - It means the number of clusters or centroids or the center position of a group.
+        Mean - Average 
+        To find the distance between two elements to decide in which cluster the other element is, 
+        we have to use Euclidean Distance and Manhattan Distance.
+        Euclidean Distance Equation: √(x2-x1)² + (y2-y1)²
+        Dataset:
+            |Height     | Weight
+            |-----------|----------
+            |185        | 72 
+            |-----------|----------
+            |170        | 56
+            |-----------|----------
+            |168        | 60 
+            |-----------|----------
+            |179        | 68 
+            |-----------|----------
+            
+             Euclidean Distance for k1- (185,72)    k2- (170,56) 
+                            S - (168,60)
+                            
+                            k1 -  √(x2-x1)² + (y2-y1)²
+                                = √(168-185)² + (60-72)²
+                                = 20.8
+                            k1 -  √(x2-x1)² + (y2-y1)²
+                                = √(168-170)² + (60-56)²
+                                = 4.4
+                            S- (179,68)
+                             k1 -  √(x2-x1)² + (y2-y1)²
+                                = √(179-185)² + (68-72)²
+                                = 7.2
+                                
+                             k1 - Mean = 170+168/2 , 56+60/2 
+                                       = 169       , 58
+                                √(x2-x1)² + (y2-y1)²
+                                = √(179-169)² + (68-58)²
+                                = 14.1
+
+    DBscan - 
+    Aglomeritive Clustering 
+
+            
+            
+            
+            
+           
+             
+        
+'''
