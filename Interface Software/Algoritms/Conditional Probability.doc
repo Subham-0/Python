@@ -1,0 +1,125 @@
+Conditional Probabilitie
+---------------------------
+P(A|B) = Probability of a so that be has already occured
+            P(A⋂B)
+       = —————————————
+             P(B)
+https://stats.stackexchange.com/questions/385268/what-is-pab-in-venn-diagram
+
+P(A) = 35/100
+P(B) = 40/100
+P(A⋂B) = 20/100
+P(B⋂A) = 20/100
+             
+
+Bayes Theorem
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+          P(B|A)*P(A)
+P(A|B) = —————————————
+             P(B)
+                   P(A⋂B)
+Given = P(A|B) = ————————————
+                    P(B)
+          
+                   P(B⋂A)
+Given = P(B|A) = ————————————
+                    P(A)
+P(A⋂B) = P(A|B)*P(B)
+P(B⋂A) = P(B|A)*P(A)
+
+P(A|B)*P(B) = P(B|A)*P(A)
+
+            P(B|A)*P(A)
+ P(A|B) = ——————————————————
+               P(B)
+
+Supervisioning Mechine Learning
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+            Dataset
+            ‾‾‾‾‾‾‾
+            |Car-no     | Color    |type       | origin   |stolen   |
+            |———————————|——————————|———————————|——————————|—————————|
+            |1          | R        | SP        | Domestic | Y       |
+            |-----------|----------|-----------|----------|---------|
+            |2          | R        | SP        | Domestic | N       |
+            |-----------|----------|-----------|----------|---------|
+            |3          | R        | SP        | Domestic | Y       |
+            |-----------|----------|-----------|----------|---------|
+            |4          | Y        | SP        | Domestic | N       |
+            |-----------|----------|-----------|----------|---------|
+            |5          | Y        | SP        | Important| Y       |
+            |-----------|----------|-----------|----------|---------|
+            |6          | Y        | SUV       | Important| N       |
+            |-----------|----------|-----------|----------|---------|
+            |7          | Y        | SUV       | Important| Y       |
+            |-----------|----------|-----------|----------|---------|
+            |8          | Y        | SUV       | Domestic | N       |
+            |-----------|----------|-----------|----------|---------|
+            |9          | R        | SUV       | Important| N       |
+            |-----------|----------|-----------|----------|---------|
+            |10         | R        | SP        | Important| Y       |
+            |-----------|----------|-----------|----------|---------|
+
+
+P(Y) = 5/10
+P(N) = 5/10
+
+probability of a car being red given that it is stolen
+            P(Y|R).P(R)
+P(R|Y) = ——————————————————
+                P(Y)
+      
+      P(Y|R) is the probability that a red car is stolen.
+      P(R) is the probability that a car is red.
+      P(Y) is the probability of a car being stolen.
+
+      Number of red cars: 5
+      Number of stolen red cars: 3
+      P(Y|R) = 3/5
+      P(R)= 5/10 = 1/2
+      P(Y)= 5/10 = 1/2
+            
+            3/5 * 1/2
+      = ————————————————— = 3/5
+               1/2
+
+probability of a car being red given that it is not stolen
+            P(Y|R).P(R)
+P(R|N) = ——————————————————
+                P(N)
+      
+      P(Y|R) is the probability that a red car is not stolen.
+      P(R) is the probability that a car is red.
+      P(N) is the probability of a car being not stolen.
+
+      Number of red cars: 5
+      Number of not stolen red cars: 2
+      P(Y|R) = 2/5
+      P(R)= 5/10 = 1/2
+      P(N)= 5/10 = 1/2
+            
+            2/5 * 1/2
+      = —————————————————— = 2/5
+               1/2
+
+similarly probability of a car being yellow given that it is stolen
+P(Y|Y)=2/5
+similarly probability of a car being yellow given that it is not stolen 
+P(Y|N)=3/5 
+
+P(SUV|Y) = 1/5          P(SUV|n) = 3/5
+
+P(SP|Y) = 4/5           P(SP|N) = 2/5
+
+P(D|Y) = 2/5            P(D|N) = 3/5
+
+P(I|Y) = 3/5            P(I|N) = 2/5
+
+
+S = <R, SUV , D>
+
+P(R|Y)*P(SUV|Y)*P(D|Y)
+= 3/5 * 1/5 * 2/5 = 0.04  ✕ 
+
+P(R|N)*P(SUV|N)*P(D|N)
+= 2/5 * 3/5 * 3/5 = 0.14  ✓ 
