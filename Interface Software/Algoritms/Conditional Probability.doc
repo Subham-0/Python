@@ -12,8 +12,8 @@ P(A⋂B) = 20/100
 P(B⋂A) = 20/100
              
 
-Bayes Theorem
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Naive Bayes Theorem
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
           P(B|A)*P(A)
 P(A|B) = —————————————
              P(B)
@@ -123,3 +123,15 @@ P(R|Y)*P(SUV|Y)*P(D|Y)
 
 P(R|N)*P(SUV|N)*P(D|N)
 = 2/5 * 3/5 * 3/5 = 0.14  ✓ 
+
+Question : Find the probability of Kingface in the playing cards?
+
+ Ans -> we know 
+            P(B|A)*P(A)
+ P(A|B) = ——————————————————
+               P(B)
+Probability of king that face have already occured  
+K=4 , F=12 , C=52
+             P(F|K)*P(K)            1*4/52        1
+ P(K|F) = —————————————————— =   ————————————— = ———— = 0.33
+               P(F)                  12/52        3
