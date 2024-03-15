@@ -42,7 +42,7 @@ It describes the dispersions of set of datas and it has the following common com
 4- Variance
 5- Standard Deviation
 6- Co-efficient of Variance
-⒌⒍
+
 ⒈Range
 ‾‾‾‾‾‾‾
 It is the difference between maximun value and the minimum value of the dataset.
@@ -108,6 +108,35 @@ IQR = 123.5-111.5 = 12.0
             PV = ∆² = 130/5 = 26.0
             Population Standard deviation = √PV =  √∆² =  √26.0 = 5.1
 
-            Co-efficient Of Variance - It the ra
+            Co-efficient Of Variance - It the ratio between ∆ and μ 
+
+                C.V = ∆/μ = 5.1/13 = 0.393
+Measures of Shape
+        It represent all the graphical representation like barchat, pi-chat , stackbar , histogram
+        Method of classification
+        Classification can be done between similar element, disimilar element , it divided into measure parts
+        1-Geo-graphical-classification  City VS Population 
+        2-Cronological-classification   Year VS Population 
+        3-Qualitive-classification      Age with no of students
+                |
+                |=>Simple Classification
+                |
+                |=>Mainfold Classification
+
+        Simple Classification => It is between Male and Female
+        Mainfold classification => More classification of Simple classification
+
+                                Ex-   MC
+                                      /\
+                                     /  \
+                                    M    F
+                                    /\
+                                   L  I
+Question -> Create a table which should represent gender, others column which will say
+            about the litracy about the odisha by gender?
+Ans      -> 
+                        Table 5.1
+                        
+
 
         
