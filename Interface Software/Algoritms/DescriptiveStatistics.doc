@@ -112,6 +112,7 @@ IQR = 123.5-111.5 = 12.0
 
                 C.V = ∆/μ = 5.1/13 = 0.393
 Measures of Shape
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
         It represent all the graphical representation like barchat, pi-chat , stackbar , histogram
         Method of classification
         Classification can be done between similar element, disimilar element , it divided into measure parts
@@ -136,7 +137,19 @@ Question -> Create a table which should represent gender, others column which wi
             about the litracy about the odisha by gender?
 Ans      -> 
                         Table 5.1
-                        
-
-
+                        ‾‾‾‾‾‾‾‾‾‾
+              litracy of Odisha by Gender
+              ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+        _______________________________________               
+        |gender|              |               |
+        |      |    Rural     |      urban    | 
+        ---------------------------------------
+               |  H |  M | S  |  H |  M | S   |
+        --------------------------------------- 
+           M   |              |               |
+        ---------------------------------------
+           F   |              |               |
+        ---------------------------------------    
+                Source_____________________
+                FoolNo. ___________________
         

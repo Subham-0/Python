@@ -131,7 +131,9 @@ Question : Find the probability of Kingface in the playing cards?
  P(A|B) = ——————————————————
                P(B)
 Probability of king that face have already occured  
+
 K=4 , F=12 , C=52
+
              P(F|K)*P(K)            1*4/52        1
  P(K|F) = —————————————————— =   ————————————— = ———— = 0.33
                P(F)                  12/52        3
