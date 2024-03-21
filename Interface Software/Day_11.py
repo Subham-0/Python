@@ -100,7 +100,8 @@ print(ts)
 
 
 #class calender
-'''in the following ecxample we are using to get the calendrr'''
+'''in the following ecxample we are using calender class to get the calender of the month
+month method takes two argument year and month'''
 import calendar
 cal = calendar.month(2024,3)
 
