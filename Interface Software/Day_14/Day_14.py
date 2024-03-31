@@ -11,11 +11,9 @@ We have to imported two libraries pandas and numpy
 """
 
 #Example1
-from operator import index
-from os import read
+
 import pandas as pd 
 import numpy as np
-from telegram import File 
 data = np.array(["a","b","c","d"])
 s= pd.Series(data,index=[100,101,102,103])
 print(s)
@@ -51,22 +49,3 @@ print(df)
 
 #How to get perticular column values by using local function
 print(df.loc[["Day1","Day2"]])
-
-#How to access the csv file?(Comma Separated values)
-# 1- find the csv File
-# 2- keep that csv file inside your working directory
-# 3- access the by pandas read_csv function
-# 4- then do your filtering in that data
-    # ex-1
-df = pd.read_csv("country.csv")
-print(df)
-print(df.head())    
-print(df.head(10))
-print(df.tail())
-print(df.info())
-
-#Forward slicing and Backward slicing
-df1 = df[1:3]
-print(df1)
-df2 = df[-1:]
-print(df2)
