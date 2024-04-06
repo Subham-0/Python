@@ -1,0 +1,18 @@
+database connection-mysql-python
+1-Install XMAPP
+2-Start mysql adn apache
+3-Install mysql connector(pip install mysql-connector-python)
+4-import mysql-connector
+5-create the connection object
+6-by calling a method called connect of mysql.connector which has four arrgument
+    -host(it is the Ip address of the laptop 127.0.0.1)
+    -user(by default root)
+    -passwd=""(no password)
+    -database="gift"
+
+7-Create a result  set by calling a method called as a cursor of connection
+    in the above line (myconn.cursor) which job is connect to the data base and one statement is created whose name as a cursor
+    then called a method called excute of cursor and passing one sql statement
+    (cur.excute("select * from table))
+8-Fetching the rows from the cursor object(cur.fetchall() it return all the rows)
+9-
