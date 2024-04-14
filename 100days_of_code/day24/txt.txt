@@ -1,0 +1,4 @@
+1- Adding highscore functionality in the snake game
+
+2-  FILES
+    How we can use python to open,read,write and close the file ?
