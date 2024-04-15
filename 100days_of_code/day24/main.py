@@ -10,6 +10,12 @@ with open("my_file.txt") as file:
     contents = file.read()
     print(contents)
     
+# with open("/Users/HP/Desktop/PYTHON/Python/100days_of_code/day24/my_file.txt") as file:
+#     contents = file.read()
+#     print(contents)
+    
+
+    
 #remove the previous data write new
 with open("my_file.txt", mode='w') as file:
     file.write("\nNew text added")
