@@ -16,7 +16,7 @@
     
 import pandas
 
-data = pandas.read_csv("weather_data.csv")
+# data = pandas.read_csv("weather_data.csv")
 # # print(data)
 # print(data["temp"])
 
@@ -60,12 +60,30 @@ data = pandas.read_csv("weather_data.csv")
 
 
 #Create a dataframe from scratch
-data_dict_mark = {
-    "student":["subham","sipu","ajit","nikhil","chiku"],
-    "scores":[67,78,89,87,76]
+# data_dict_mark = {
+#     "student":["subham","sipu","ajit","nikhil","chiku"],
+#     "scores":[67,78,89,87,76]
+# }
+
+# mark_data = pandas.DataFrame(data_dict_mark)
+# print(mark_data)
+# #save into a csv file
+# mark_data.to_csv("new_mark_data.csv")
+
+
+squirrels_data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+gray_squirrels_count = len(squirrels_data[squirrels_data["Primary Fur Color"] == "Gray"])
+red_squirrels_count = len(squirrels_data[squirrels_data["Primary Fur Color"] == "Cinnamon"])
+black_squirrels_count = len(squirrels_data[squirrels_data["Primary Fur Color"] == "Black"])
+
+print(gray_squirrels_count)
+print(red_squirrels_count)
+print(black_squirrels_count)
+
+data_dict = {
+    "Fun Color":["Gray","Cinnamon","Black"],
+    "Count":[gray_squirrels_count,red_squirrels_count,black_squirrels_count]
 }
 
-mark_data = pandas.DataFrame(data_dict_mark)
-print(mark_data)
-#save into a csv file
-mark_data.to_csv("new_mark_data.csv")
+df = pandas.DataFrame(data_dict)
+df.to_csv("squirrels_count.csv")
