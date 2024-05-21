@@ -4,7 +4,7 @@ from datetime import datetime
 import pandas 
 
 MY_EMAIL = "testsmtpcode11@gmail.com" #your email id
-MY_PASSWORD =  "#### #### #### ####" # paste your gmail>google> app password
+MY_PASSWORD = "#### #### #### ####" # paste your gmail>google> app password
 
  
 # today = (datetime.now().month,datetime.now().day)
@@ -35,4 +35,3 @@ if today_tuple in birthdays_dict:
                             msg=f"Subject:Happy Birthday!\n\n{contains}")    
         
         
-
