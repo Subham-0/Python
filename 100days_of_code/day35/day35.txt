@@ -1,0 +1,2 @@
+What is an API Authentication and Why DO We Need To Authenticate Ourselves?
+    -API authentication is vital for ensuring that only authorized users and applications can access and interact with your API. It plays a key role in maintaining security, managing resources, preserving data integrity, enabling auditing and monitoring, and enforcing access controls. Without proper authentication mechanisms, APIs would be vulnerable to misuse, abuse, and various security threats.
